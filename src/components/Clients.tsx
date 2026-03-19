@@ -6,6 +6,9 @@ const clients = [
   { name: 'ASX Energy', industryKey: 'clients.c1_industry' },
   { name: 'Silicon Labs', industryKey: 'clients.c2_industry' },
   { name: 'Cardinal Peak', industryKey: 'clients.c3_industry' },
+  { name: 'Thermacell', industryKey: 'clients.c4_industry' },
+  { name: 'ArayaPRO', industryKey: 'clients.c5_industry' },
+  { name: 'Enel', industryKey: 'clients.c6_industry' },
 ]
 
 export default function Clients() {

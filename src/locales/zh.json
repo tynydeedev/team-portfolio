@@ -72,7 +72,10 @@
     "desc": "我们服务越南、美国和欧洲的客户，无论时区如何，均提供高质量解决方案。",
     "vn_label": "越南（胡志明市 & 河内）",
     "us_label": "美国",
-    "eu_label": "欧盟"
+    "eu_label": "欧盟",
+    "au_label": "澳大利亚（悉尼）",
+    "nz_label": "新西兰（奥克兰）",
+    "au_nz_label": "澳大利亚与新西兰"
   },
   "clients": {
     "tag": "信任我们的客户",
@@ -81,6 +84,9 @@
     "c1_industry": "能源行业",
     "c2_industry": "半导体与物联网",
     "c3_industry": "技术咨询",
+    "c4_industry": "户外驱虫剂",
+    "c5_industry": "支付与供应商核验",
+    "c6_industry": "可持续能源",
     "footer": "以及越南、美国和欧洲的更多企业。"
   },
   "team": {
