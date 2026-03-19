@@ -13,7 +13,7 @@ const LOCATIONS = [
   { lat: 52.52, lng: 13.405, labelKey: 'map.eu_label', color: '#34d399', radius: 11 },         // Berlin
   { lat: 51.5074, lng: -0.1278, labelKey: 'map.eu_label', color: '#34d399', radius: 11 },      // London
   { lat: -33.8688, lng: 151.2093, labelKey: 'map.au_label', color: '#f59e0b', radius: 11 },    // Sydney
-  { lat: -36.8485, lng: 174.7633, labelKey: 'map.nz_label', color: '#f59e0b', radius: 10 },    // Auckland
+  { lat: -41.2925, lng: 174.7783, labelKey: 'map.nz_label', color: '#f59e0b', radius: 10 },    // Wellington
 ]
 
 const LEGEND = [
