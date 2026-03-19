@@ -72,7 +72,10 @@
     "desc": "We work with clients across Vietnam, the United States, and Europe — delivering high-quality solutions regardless of timezone.",
     "vn_label": "Vietnam (HCM & Hanoi)",
     "us_label": "United States",
-    "eu_label": "European Union"
+    "eu_label": "European Union",
+    "au_label": "Australia (Sydney)",
+    "nz_label": "New Zealand (Auckland)",
+    "au_nz_label": "Australia & New Zealand"
   },
   "clients": {
     "tag": "Trusted By",
@@ -81,6 +84,9 @@
     "c1_industry": "Energy Sector",
     "c2_industry": "Semiconductor & IoT",
     "c3_industry": "Technology Consulting",
+    "c4_industry": "Outdoor Insect Repellent",
+    "c5_industry": "Payment & Supplier Verification",
+    "c6_industry": "Sustainable Energy",
     "footer": "And many more companies across Vietnam, the US and EU."
   },
   "team": {

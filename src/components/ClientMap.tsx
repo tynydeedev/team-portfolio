@@ -12,12 +12,15 @@ const LOCATIONS = [
   { lat: 48.8566, lng: 2.3522, labelKey: 'map.eu_label', color: '#34d399', radius: 11 },       // Paris
   { lat: 52.52, lng: 13.405, labelKey: 'map.eu_label', color: '#34d399', radius: 11 },         // Berlin
   { lat: 51.5074, lng: -0.1278, labelKey: 'map.eu_label', color: '#34d399', radius: 11 },      // London
+  { lat: -33.8688, lng: 151.2093, labelKey: 'map.au_label', color: '#f59e0b', radius: 11 },    // Sydney
+  { lat: -41.2925, lng: 174.7783, labelKey: 'map.nz_label', color: '#f59e0b', radius: 10 },    // Wellington
 ]
 
 const LEGEND = [
   { color: '#818cf8', labelKey: 'map.vn_label' },
   { color: '#22d3ee', labelKey: 'map.us_label' },
   { color: '#34d399', labelKey: 'map.eu_label' },
+  { color: '#f59e0b', labelKey: 'map.au_nz_label' },
 ]
 
 export default function ClientMap() {
