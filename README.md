@@ -13,8 +13,12 @@ React + TypeScript + Vite project, configured for Cloudflare Pages.
    - **Build output directory**: `dist`
    - **Root directory**: *(leave empty)*
 5. In the same project, open **Settings** → **Environment variables** and add:
+   - `NODE_VERSION` = `22`
    - `VITE_DISCORD_WEBHOOK_URL` = your Discord webhook URL
-6. Click **Save and Deploy**.
+6. Open **Settings** → **Builds & deployments** and ensure:
+   - **Production branch**: `main`
+   - **Build system version**: `v2` (default)
+7. Click **Save and Deploy**.
 
 ## Required Project Config (already included)
 
