@@ -31,7 +31,6 @@ export default function Clients() {
             </div>
           ))}
         </div>
-        <p className={styles.footer}>{t('clients.footer')}</p>
       </div>
     </section>
   )
