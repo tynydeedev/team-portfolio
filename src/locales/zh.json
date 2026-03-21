@@ -20,7 +20,7 @@
     "stat1_label": "资深工程师",
     "stat2_val": "4+",
     "stat2_label": "年人均经验",
-    "stat3_val": "VN · US · EU",
+    "stat3_val": "🇻🇳, 🇺🇸, 🇪🇺, 🇦🇺",
     "stat3_label": "全球客户群"
   },
   "about": {
@@ -128,6 +128,6 @@
   },
   "footer": {
     "tagline": "Web开发 · 云解决方案 · 内部工具",
-    "rights": "© 2026 TynyDee Dev. 保留所有权利。"
+    "rights": "© 2026 WildSpaceTech. 保留所有权利。"
   }
 }

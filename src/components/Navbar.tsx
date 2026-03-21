@@ -32,7 +32,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
         <a href="#hero" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollTo('hero') }}>
-          TynyDee<span>Dev</span>
+          WildSpace<span>Tech</span>
         </a>
 
         <button

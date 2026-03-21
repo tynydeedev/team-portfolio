@@ -20,7 +20,7 @@
     "stat1_label": "Kỹ sư cấp cao",
     "stat2_val": "4+",
     "stat2_label": "Năm kinh nghiệm",
-    "stat3_val": "VN · US · EU",
+    "stat3_val": "🇻🇳, 🇺🇸, 🇪🇺, 🇦🇺",
     "stat3_label": "Khách hàng toàn cầu"
   },
   "about": {
@@ -128,6 +128,6 @@
   },
   "footer": {
     "tagline": "Phát triển Web · Giải pháp Cloud · Công cụ nội bộ",
-    "rights": "© 2026 TynyDee Dev. Tất cả quyền được bảo lưu."
+    "rights": "© 2026 WildSpaceTech. Tất cả quyền được bảo lưu."
   }
 }

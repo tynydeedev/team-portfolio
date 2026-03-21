@@ -20,7 +20,7 @@
     "stat1_label": "Senior Engineers",
     "stat2_val": "4+",
     "stat2_label": "Years Experience Each",
-    "stat3_val": "VN · US · EU",
+    "stat3_val": "🇻🇳, 🇺🇸, 🇪🇺, 🇦🇺",
     "stat3_label": "Client Base"
   },
   "about": {
@@ -128,6 +128,6 @@
   },
   "footer": {
     "tagline": "Web Development · Cloud Solutions · Internal Tools",
-    "rights": "© 2026 TynyDee Dev. All rights reserved."
+    "rights": "© 2026 WildSpaceTech. All rights reserved."
   }
 }

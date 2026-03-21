@@ -18,7 +18,7 @@ export default function Footer() {
             className={styles.logo}
             onClick={(e) => { e.preventDefault(); scrollTo('hero') }}
           >
-            TynyDee<span>Dev</span>
+            WildSpace<span>Tech</span>
           </a>
           <p>{t('footer.tagline')}</p>
         </div>
