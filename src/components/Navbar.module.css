@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 1000;
+  z-index: 1100;
   padding: 20px 0;
   transition: background 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
   border-bottom: 1px solid transparent;
@@ -95,6 +95,34 @@
   transition: all 0.3s;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  border: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1090;
+  cursor: pointer;
+}
+
+.closeItem {
+  display: none;
+}
+
+.closeButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .toggle { display: flex; }
   .links {
@@ -103,13 +131,21 @@
     width: 280px; height: 100vh;
     background: var(--color-bg-alt);
     flex-direction: column;
-    padding: 88px 28px 32px;
+    padding: 32px 28px 32px;
     gap: 20px;
     transition: right 0.3s ease;
     border-left: 1px solid var(--color-border);
     overflow-y: auto;
+    z-index: 1200;
   }
   .linksOpen { right: 0; }
+  .closeItem {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -12px;
+    margin-bottom: 6px;
+  }
   .langSwitcher {
     border-left: none;
     padding-left: 0;

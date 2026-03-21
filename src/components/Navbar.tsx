@@ -19,6 +19,17 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false)
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [])
+
   const closeMenu = () => setMenuOpen(false)
 
   const scrollTo = (id: string) => {
@@ -29,48 +40,54 @@ export default function Navbar() {
   const changeLang = (code: string) => i18n.changeLanguage(code)
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-      <div className={`container ${styles.inner}`}>
-        <a href="#hero" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollTo('hero') }}>
-          WildSpace<span>Tech</span>
-        </a>
+    <>
+      {menuOpen && <button className={styles.backdrop} onClick={closeMenu} aria-label="Close navigation menu" />}
+      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+        <div className={`container ${styles.inner}`}>
+          <a href="#hero" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollTo('hero') }}>
+            WildSpace<span>Tech</span>
+          </a>
 
-        <button
-          className={styles.toggle}
-          onClick={() => setMenuOpen((o) => !o)}
-          aria-label="Toggle navigation"
-        >
-          <span className={menuOpen ? styles.open : ''} />
-          <span className={menuOpen ? styles.open : ''} />
-          <span className={menuOpen ? styles.open : ''} />
-        </button>
+          <button
+            className={styles.toggle}
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="Toggle navigation"
+          >
+            <span className={menuOpen ? styles.open : ''} />
+            <span className={menuOpen ? styles.open : ''} />
+            <span className={menuOpen ? styles.open : ''} />
+          </button>
 
-        <ul className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
-          {['about', 'services', 'map', 'clients', 'team'].map((id) => (
-            <li key={id}>
-              <a href={`#${id}`} onClick={(e) => { e.preventDefault(); scrollTo(id) }}>
-                {t(`nav.${id}`)}
+          <ul className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
+            <li className={styles.closeItem}>
+              <button className={styles.closeButton} onClick={closeMenu} aria-label="Close menu">×</button>
+            </li>
+            {['about', 'services', 'map', 'clients', 'team'].map((id) => (
+              <li key={id}>
+                <a href={`#${id}`} onClick={(e) => { e.preventDefault(); scrollTo(id) }}>
+                  {t(`nav.${id}`)}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a href="#contact" className={styles.cta} onClick={(e) => { e.preventDefault(); scrollTo('contact') }}>
+                {t('nav.cta')}
               </a>
             </li>
-          ))}
-          <li>
-            <a href="#contact" className={styles.cta} onClick={(e) => { e.preventDefault(); scrollTo('contact') }}>
-              {t('nav.cta')}
-            </a>
-          </li>
-          <li className={styles.langSwitcher}>
-            {LANGS.map((l) => (
-              <button
-                key={l.code}
-                className={i18n.language === l.code || i18n.language.startsWith(l.code) ? styles.activeLang : ''}
-                onClick={() => { changeLang(l.code); closeMenu() }}
-              >
-                {l.label}
-              </button>
-            ))}
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <li className={styles.langSwitcher}>
+              {LANGS.map((l) => (
+                <button
+                  key={l.code}
+                  className={i18n.language === l.code || i18n.language.startsWith(l.code) ? styles.activeLang : ''}
+                  onClick={() => { changeLang(l.code); closeMenu() }}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   )
 }
